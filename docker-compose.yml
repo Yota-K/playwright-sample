@@ -1,0 +1,10 @@
+version: '3'
+
+# MEMO: https://zukucode.com/2022/02/playwright-docker-codegen.html
+services:
+  playwright_app:
+    container_name: playwright_app
+    tty: true
+    build: .
+    volumes:
+      - ./app:/app
